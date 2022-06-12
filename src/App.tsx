@@ -1,9 +1,16 @@
-import { Wrapper } from "./components/styled/index";
+import { Wrapper, Row, Image, Header} from "./components/styled/index";
+ import birdOrg from "./images/birdOrg.png";
+ 
+
 
 const App = () => {
   return (
+    
     <Wrapper>
-      <div>App</div>
+       <Row>
+      <Header>Spaßvogel</Header>
+      <Image src={birdOrg} alt="Spaßvogel bild"/>
+      </Row>
     </Wrapper>
   );
 };
