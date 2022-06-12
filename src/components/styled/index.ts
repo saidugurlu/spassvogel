@@ -5,7 +5,7 @@ import Row from "./Row";
 import Form from "./Form";
 import Search from "./Search";
 import Button from "./Button";
-/*import { CardWrapper, CardTop, CardBottom, Setup, Delivery } from "./Card"; */
+import { CardWrapper, CardTop, CardBottom, Setup, Delivery } from "./Card"; 
 
 export {
   Wrapper,
@@ -15,9 +15,9 @@ export {
   Form,
   Search,
   Button,
-  /* CardWrapper,
+   CardWrapper,
   CardTop,
   CardBottom,
   Setup,
-  Delivery, */
+  Delivery,
 };

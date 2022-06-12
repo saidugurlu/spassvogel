@@ -1,4 +1,6 @@
+import axios from "axios";
 import { useState } from "react";
+import JokeItem from "./components/JokeItem";
 import {
   Wrapper,
   Row,
@@ -9,13 +11,13 @@ import {
   Button,
 } from "./components/styled/index";
 import birdOrg from "./images/birdOrg.png";
+import { Joke } from "./common/types";
 
 
 
 const baseURL = "https://v2.jokeapi.dev/joke/Any";
 const App = () => {
 
-  const [search, setSearch] = useState("");
   const [search, setSearch] = useState("");
   const [error, setError] = useState(false);
   const [jokes, setJokes] = useState<Joke[]>([]);
@@ -29,6 +31,22 @@ const App = () => {
 
   const getJokes = async (event: React.FormEvent<HTMLFormElement>) => {
     // Can i use too this: const getJokes: React.FormEventHandler<HTMLFormElement> = async (event) => {
+
+event.preventDefault();
+const endPoint = `${baseURL}?contains=${search}&amount=20`
+const {data} = await axios.get(endPoint)
+
+if (data.error) {
+  setError(true);
+  setJokes([]);
+} else {
+  setError(false);
+  setJokes(data.jokes);
+}
+
+setSearch("");
+
+
   };
 
   return (
@@ -46,6 +64,15 @@ const App = () => {
         />
         <Button type="submit">Submit</Button>
       </Form>
+
+
+
+          {/* Jokes */}
+          <div>
+          {error && <p>Sorry, no jokes found.</p>}
+          {jokes.length > 0 &&
+            jokes.map((joke) => <JokeItem key={joke.id} joke={joke} />)}
+        </div>
     </Wrapper>
   );
 };
