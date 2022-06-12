@@ -10,7 +10,6 @@
 :root {
   font-size: 62.5%;
 }
- 
 
 body {
   margin: 0;
@@ -18,6 +17,17 @@ body {
   font-family: "Special Elite", cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(
+    to right top,
+    #eb800e,
+    #d7465a,
+    #8e3c78,
+    #373967,
+    #052434
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 code {
