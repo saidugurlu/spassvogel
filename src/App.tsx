@@ -1,11 +1,11 @@
-
-
-
+import { Wrapper } from "./components/styled/index";
 
 const App = () => {
   return (
-    <h1>App</h1>
-  )
-}
+    <Wrapper>
+      <div>App</div>
+    </Wrapper>
+  );
+};
 
-export default App
+export default App;

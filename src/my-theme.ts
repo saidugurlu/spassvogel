@@ -4,8 +4,9 @@ const myTheme: DefaultTheme = {
   borderRadius: '5px',
 
   colors: {
-    main: 'cyan',
-    secondary: 'magenta',
+    main: '#3c12fa',
+    secondary: '#8a28de',
+    white:"#fff",
  
   },
 };
