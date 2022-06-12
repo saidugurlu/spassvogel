@@ -10,8 +10,17 @@ import {
 } from "./components/styled/index";
 import birdOrg from "./images/birdOrg.png";
 
+
+
+const baseURL = "https://v2.jokeapi.dev/joke/Any";
 const App = () => {
+
   const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("");
+  const [error, setError] = useState(false);
+  const [jokes, setJokes] = useState<Joke[]>([]);
+
+
 
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = (event) => {
     // Can i use too this: const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>  {
