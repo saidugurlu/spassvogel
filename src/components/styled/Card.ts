@@ -7,12 +7,12 @@ interface CardProps {
 
 const CardWrapper = styled.div<CardProps>`
   background: ${(props) => props.theme.colors.white};
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 15px 0px;
   width: 650px;
   height: 180px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
-  font-size: 20px;
+  font-size: 18px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -35,12 +35,13 @@ const CardTop = styled.div<CardProps>`
 `;
 
 const Setup = styled.p<CardProps>`
-  font-size: 16px;
+  font-size: 17px;
   flex: 1;
+  font-weight: 500;
 `;
 
 const Delivery = styled.p<CardProps>`
-  font-size: 16px;
+  font-size: 17px;
   flex: 1;
   font-weight: 500;
 `;

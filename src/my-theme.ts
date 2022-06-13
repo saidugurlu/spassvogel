@@ -5,8 +5,8 @@ const myTheme: DefaultTheme = {
 
   colors: {
     main: '#3c12fa',
-    secondary: '#8a28de',
-    white:"#fff",
+    secondary: '#C31B00',
+    white:"#E6E5FB",
  
   },
 };

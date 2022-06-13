@@ -10,6 +10,7 @@ import {
   Form,
   Button,
 } from "./components/styled/index";
+import birdBlue from "./images/birdBlue.png";
 import birdOrg from "./images/birdOrg.png";
 import { Joke } from "./common/types";
 
@@ -45,6 +46,7 @@ const App = () => {
   return (
     <Wrapper>
       <Row>
+      <Image src={birdBlue} alt="Spaßvogel bild" />
         <Header>Spaßvogel</Header>
         <Image src={birdOrg} alt="Spaßvogel bild" />
       </Row>
