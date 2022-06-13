@@ -5,7 +5,7 @@ import {
   Setup,
   Delivery,
 } from "./styled/index";
-import { Joke, FlagKeys, Category } from "../common/types";
+import { Joke, FlagKeys } from "../common/types";
 
 interface JokeItemProps {
   joke: Joke;
