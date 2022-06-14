@@ -16,7 +16,6 @@ const CardWrapper = styled.div<CardProps>`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 `;
 
 const CardTop = styled.div<CardProps>`
