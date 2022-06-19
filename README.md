@@ -1,5 +1,5 @@
 # Project - Spaßvogel - 
-![reference image](/images/readme.png)
+![reference image](/public/images/readme.png)
 
 In diesem Project wurde mit REACT, TypeScript und Styled Components entwickelt.
 
